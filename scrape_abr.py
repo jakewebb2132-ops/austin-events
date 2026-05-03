@@ -4,18 +4,22 @@ scrape_abr.py — Multi-source Austin events scraper
 Sources:
   1. Austin Business Review (austinbusinessreview.com) — curated weekly newsletter
      Strategy: Fetch latest /archive issue, extract 🗓️ event links directly from HTML
-     
+
   2. Austin Forum (austinforum.org/events) — AI & tech panel events
      Strategy: Parse structured HTML — title, date, time, location, View Event URL
-     
+
   3. lu.ma/austin — Community events calendar
-     Strategy: Luma returns JS-rendered HTML with no links in static fetch.
-     We use their public discover API instead: api.lu.ma/discover/get-paginated-events
-     
-  4. Meetup — AI & tech meetup groups in Austin
-     Strategy: Meetup blocks unauthenticated scrapers (403). We query their
-     public Open Events API: api.meetup.com/find/events
-     No API key required for basic public event search.
+     Strategy: Luma's static HTML has no event URLs (JS-rendered).
+     We use their public geo-discovery API instead.
+
+  4. Do512 (do512.com) — Austin's best local events aggregator
+     Strategy: Scrape per-day pages (do512.com/events/YYYY/M/D) for each day
+     in the target week. HTML is fully static and well-structured.
+     Covers workshops, classes, community events, and culture.
+
+  NOT included (blocked):
+  - Meetup.com — 403 on all endpoints; paid API is $47/mo
+  - Eventbrite browse pages — 429 rate-limited + JS-rendered
 """
 
 import requests
@@ -255,74 +259,91 @@ def scrape_luma_austin(start_date=None, end_date=None):
 
 
 # ─────────────────────────────────────────────
-# SOURCE 4: Meetup (public Open Events API)
+# SOURCE 4: Do512 (Austin local events aggregator)
 # ─────────────────────────────────────────────
 
-MEETUP_API = "https://api.meetup.com/find/events"
+DO512_BASE = "https://www.do512.com"
 
-def scrape_meetup_austin(start_date=None, end_date=None):
-    """
-    Queries Meetup's public find/events API for AI & tech events near Austin.
-    No API key required for unauthenticated public search.
-    Returns {name, url, date, time, location, source} dicts.
-    """
-    print("[Meetup] Querying API for Austin AI/tech events...")
-    params = {
-        "lat": 30.2672,
-        "lon": -97.7431,
-        "radius": 20,
-        "text": "AI tech artificial intelligence",
-        "fields": "event_url,venue,local_date,local_time",
-        "page": 30,
-    }
+# Do512 categories relevant to tech/community events (skip pure music/nightlife)
+DO512_CATEGORIES = [
+    "workshops-classes",
+    "community",
+    "art-culture",
+    "variety-other",
+]
 
+def scrape_do512_day(date: datetime):
+    """Scrape a single day's events from Do512."""
+    url = f"{DO512_BASE}/events/{date.year}/{date.month}/{date.day}"
     try:
-        resp = requests.get(MEETUP_API, params=params, headers=HEADERS, timeout=15)
+        resp = requests.get(url, headers=HEADERS, timeout=15)
         resp.raise_for_status()
-        data = resp.json()
     except Exception as e:
-        print(f"[Meetup] API error: {e}")
+        print(f"[Do512] Error fetching {url}: {e}")
         return []
 
+    soup = BeautifulSoup(resp.text, "html.parser")
     events = []
-    for item in data:
-        name = item.get("name", "")
-        url = item.get("link") or item.get("event_url", "")
-        local_date = item.get("local_date", "")
-        local_time = item.get("local_time", "")
-        venue = item.get("venue", {}) or {}
-        location = venue.get("name", "") + (f", {venue.get('city', '')}" if venue.get("city") else "")
 
-        if not name or not url:
+    # Events are anchor tags matching /events/YYYY/M/D/slug-name
+    event_pattern = re.compile(r"/events/\d{4}/\d+/\d+/[\w\-]+$")
+    seen = set()
+
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if not event_pattern.search(href):
             continue
+        full_url = DO512_BASE + href if href.startswith("/") else href
+        if full_url in seen:
+            continue
+        seen.add(full_url)
 
-        # Date filter
-        if start_date and local_date:
-            try:
-                event_dt = datetime.strptime(local_date, "%Y-%m-%d")
-                if event_dt < start_date or event_dt > end_date:
-                    continue
-            except Exception:
-                pass
-
-        date_fmt = ""
-        if local_date:
-            try:
-                date_fmt = datetime.strptime(local_date, "%Y-%m-%d").strftime("%B %-d")
-            except Exception:
-                date_fmt = local_date
-
+        name = a.get_text(separator=" ", strip=True)
+        # Clean up whitespace and newlines
+        name = re.sub(r"\s+", " ", name).strip()
+        if not name or len(name) < 5:
+            continue
+        # Skip obviously non-relevant (pure music gig names are fine —
+        # Gemini will classify them as otherEvents or drop them)
         events.append({
             "name": name,
-            "url": url,
-            "date": date_fmt,
-            "time": local_time,
-            "location": location,
-            "source": "meetup.com"
+            "url": full_url,
+            "date": date.strftime("%B %-d"),
+            "time": "",
+            "location": "Austin, TX",
+            "source": "do512.com"
         })
 
-    print(f"[Meetup] Found {len(events)} events")
     return events
+
+def scrape_do512(start_date=None, end_date=None):
+    """
+    Scrapes Do512 for each day in [start_date, end_date].
+    Returns merged list of {name, url, date, time, location, source}.
+    """
+    if not start_date:
+        start_date = datetime.now()
+    if not end_date:
+        end_date = start_date + timedelta(days=7)
+
+    print(f"[Do512] Scraping {start_date.date()} → {end_date.date()}...")
+    all_events = []
+    current = start_date
+    while current <= end_date:
+        day_events = scrape_do512_day(current)
+        all_events.extend(day_events)
+        current += timedelta(days=1)
+
+    # Deduplicate
+    seen = set()
+    unique = []
+    for e in all_events:
+        if e["url"] not in seen:
+            seen.add(e["url"])
+            unique.append(e)
+
+    print(f"[Do512] Found {len(unique)} events")
+    return unique
 
 
 # ─────────────────────────────────────────────
@@ -334,12 +355,14 @@ def fetch_all_sources(start_date=None, end_date=None):
     Run all four scrapers and return a merged list.
     Caller (parse_and_deploy.py) passes this to Gemini
     for classification into aiEvents / otherEvents.
+
+    Sources: ABR newsletter, Austin Forum, Luma API, Do512
     """
     results = []
     results.extend(scrape_abr())
     results.extend(scrape_austin_forum(start_date, end_date))
     results.extend(scrape_luma_austin(start_date, end_date))
-    results.extend(scrape_meetup_austin(start_date, end_date))
+    results.extend(scrape_do512(start_date, end_date))
     print(f"\n[Total] {len(results)} raw events across all sources")
     return results
 
