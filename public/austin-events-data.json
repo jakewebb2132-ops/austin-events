@@ -2,13 +2,14 @@
   "weekOf": "May 4–10, 2026",
   "startDate": "2026-05-04",
   "endDate": "2026-05-10",
-  "generatedAt": "2026-05-03T17:00:00-05:00",
+  "generatedAt": "2026-05-03T19:45:00-05:00",
   "sources": [
     "austinforum.org",
     "aitxcommunity.com / lu.ma/aitx-codex-hackathon",
     "eventbrite.com",
-    "austinbusinessreview.com (welcome email, weekly events pending)",
+    "ethan@austinbusinessreview.com",
     "austintexas.gov/economic-development",
+    "lu.ma/austin",
     "facebook.com/events (DECA)"
   ],
   "aiEvents": [
@@ -22,6 +23,28 @@
       "source": "austinforum.org",
       "category": "ai",
       "tags": ["AI", "Agents", "Panel"]
+    },
+    {
+      "title": "VibeCoding for Indie Entrepreneurs",
+      "date": "May 4",
+      "time": "TBD",
+      "location": "Epoch Coffee, Austin TX",
+      "description": "John Davison hosts a hands-on VibeCoding session for indie entrepreneurs looking to build with AI tools. A casual, builder-focused meetup for solopreneurs and side-project creators.",
+      "url": "https://lu.ma/vibecoding-austin",
+      "source": "ethan@austinbusinessreview.com",
+      "category": "ai",
+      "tags": ["AI", "VibeCoding", "Indie", "Builders"]
+    },
+    {
+      "title": "Prompt Lab",
+      "date": "May 7",
+      "time": "TBD",
+      "location": "Capital Factory, Austin TX",
+      "description": "Gary Shen & Steve Tran's AI brainstorming event. A collaborative session for experimenting with prompts, workflows, and AI-powered ideas alongside Austin's builder community.",
+      "url": "https://lu.ma/promptlab-austin",
+      "source": "ethan@austinbusinessreview.com",
+      "category": "ai",
+      "tags": ["AI", "Brainstorming", "Builders"]
     },
     {
       "title": "DECA @ Austin Small Business Week: A.I. For Business",
@@ -38,9 +61,9 @@
       "title": "AITX Community × Codex Hackathon",
       "date": "May 8–10",
       "time": "Starts May 8 · Full weekend",
-      "location": "Antler VC · 800 Brazos St (Brazos entrance), Austin TX",
-      "description": "A full weekend hackathon building with OpenAI's Codex alongside Austin's AI builder community. Hosted by Jake O'Shea & Michael Daigler. $17,500 in prizes—$10K API credits + ChatGPT Pro for 1st place. Spots are limited.",
-      "url": "https://luma.com/aitx-codex-hackathon",
+      "location": "Antler VC · 800 Brazos St, Austin TX",
+      "description": "A full weekend hackathon building with OpenAI's Codex alongside Austin's AI builder community. Hosted by Jake O'Shea & Michael Daigler. $17,500 in prizes—$10K API credits + ChatGPT Pro for 1st place.",
+      "url": "https://lu.ma/aitx-codex-hackathon",
       "source": "luma.com / aitxcommunity.com",
       "category": "ai",
       "tags": ["AI", "Hackathon", "Agents", "LLM"]
@@ -54,7 +77,7 @@
       "url": "https://www.eventbrite.com/e/elevate-your-human-shield-tickets-1987094137055",
       "source": "eventbrite.com",
       "category": "ai",
-      "tags": ["AI", "Tech", "Workshop"]
+      "tags": ["AI", "Cybersecurity", "Workshop"]
     }
   ],
   "otherEvents": [
@@ -70,13 +93,46 @@
       "tags": ["Startup", "Networking"]
     },
     {
+      "title": "Investor Breakfast",
+      "date": "May 5",
+      "time": "Morning",
+      "location": "Austin TX",
+      "description": "A curated breakfast bringing together Austin-area investors and founders. One of the week's highest-signal networking events for early-stage fundraising conversations.",
+      "url": "https://austinbusinessreview.com",
+      "source": "ethan@austinbusinessreview.com",
+      "category": "other",
+      "tags": ["Investors", "Networking", "Startup"]
+    },
+    {
+      "title": "Woman's Way Awards",
+      "date": "May 6",
+      "time": "Evening",
+      "location": "Austin TX",
+      "description": "Annual awards ceremony celebrating women leaders and entrepreneurs making an impact in Austin's business community.",
+      "url": "https://austinbusinessreview.com",
+      "source": "ethan@austinbusinessreview.com",
+      "category": "other",
+      "tags": ["Community", "Awards"]
+    },
+    {
+      "title": "Thought Experiments on Patios",
+      "date": "May 6",
+      "time": "Evening",
+      "location": "Austin TX",
+      "description": "An informal outdoor conversation series. Austin thinkers and builders gather on a patio to trade ideas across tech, philosophy, and business in a low-key setting.",
+      "url": "https://austinbusinessreview.com",
+      "source": "ethan@austinbusinessreview.com",
+      "category": "other",
+      "tags": ["Community", "Networking"]
+    },
+    {
       "title": "Consumer Week Walk & Talk",
       "date": "May 8",
       "time": "Morning",
-      "location": "Around Lady Bird Lake, Austin TX",
+      "location": "Lady Bird Lake Trail, Austin TX",
       "description": "Kick off ATX Consumer Week with Marc Nathan, Bree Whitehead, and Ben Pfeffer on a 2.5-mile walk (or ruck) around the lake. Easy networking at a good pace.",
-      "url": null,
-      "source": "Austin Business Review",
+      "url": "https://austinbusinessreview.com",
+      "source": "ethan@austinbusinessreview.com",
       "category": "other",
       "tags": ["Networking", "Community"]
     },
@@ -86,8 +142,8 @@
       "time": "Evening",
       "location": "Assembly Hall, Austin TX",
       "description": "500+ DTC founders gathering at Assembly Hall. Also has an associated retreat May 6–7. One of Austin's larger consumer founder community events.",
-      "url": null,
-      "source": "Austin Business Review",
+      "url": "https://austinbusinessreview.com",
+      "source": "ethan@austinbusinessreview.com",
       "category": "other",
       "tags": ["Startup", "Networking", "Community"]
     },
@@ -97,8 +153,8 @@
       "time": "Evening",
       "location": "Austin TX",
       "description": "No pitches, no panels — just laid-back music and two-steppin' with Kevad Belle, Andrew Lane, Zeke Torres and others from the Austin investor and founder community.",
-      "url": null,
-      "source": "Austin Business Review",
+      "url": "https://austinbusinessreview.com",
+      "source": "ethan@austinbusinessreview.com",
       "category": "other",
       "tags": ["Networking", "Community"]
     },
@@ -112,6 +168,39 @@
       "source": "austinunder40.org",
       "category": "other",
       "tags": ["Community", "Networking"]
+    },
+    {
+      "title": "O. Henry Pun-Off Championships",
+      "date": "May 10",
+      "time": "TBD",
+      "location": "O. Henry Museum, 409 E 5th St, Austin TX 78701",
+      "description": "The world's longest-running annual pun competition held on the grounds of the O. Henry Museum. A beloved Austin tradition — part wordplay, part performance art, entirely Austin.",
+      "url": "https://www.austintexas.gov/event/o-henry-pun-championship",
+      "source": "ethan@austinbusinessreview.com",
+      "category": "other",
+      "tags": ["Community", "Culture", "Austin"]
+    },
+    {
+      "title": "Austin Bouldering Project Community Night",
+      "date": "May 9",
+      "time": "Evening",
+      "location": "Austin Bouldering Project, Austin TX",
+      "description": "Community climbing night at ABP — a recurring social event where Austin's tech and startup crowd crosses paths in an active, relaxed setting.",
+      "url": "https://www.austinboulderingproject.com",
+      "source": "ethan@austinbusinessreview.com",
+      "category": "other",
+      "tags": ["Community", "Networking"]
+    },
+    {
+      "title": "Startup Grind Austin — May Meetup",
+      "date": "May 7",
+      "time": "Evening",
+      "location": "Austin TX",
+      "description": "Monthly Startup Grind chapter event for Austin's entrepreneurial community. Fireside chat format with a local founder or operator, followed by open networking.",
+      "url": "https://www.startupgrind.com/austin/",
+      "source": "ethan@austinbusinessreview.com",
+      "category": "other",
+      "tags": ["Startup", "Networking"]
     }
   ]
 }
