@@ -1,0 +1,117 @@
+{
+  "weekOf": "May 4–10, 2026",
+  "startDate": "2026-05-04",
+  "endDate": "2026-05-10",
+  "generatedAt": "2026-05-03T17:00:00-05:00",
+  "sources": [
+    "austinforum.org",
+    "aitxcommunity.com / lu.ma/aitx-codex-hackathon",
+    "eventbrite.com",
+    "austinbusinessreview.com (welcome email, weekly events pending)",
+    "austintexas.gov/economic-development",
+    "facebook.com/events (DECA)"
+  ],
+  "aiEvents": [
+    {
+      "title": "Beyond Chatbots—The Rise of the AI Agent",
+      "date": "May 5",
+      "time": "5:15 PM (networking) · 6:15–7:45 PM (program)",
+      "location": "ACC Rio Grande, Bldg 3000 · 1218 West Ave, Austin TX 78701",
+      "description": "Austin Forum executive director Jay Boisseau leads an expert panel on the shift from generative chat to actionable AI agents—how agents use LLMs to independently plan, use tools, and execute complex workflows. From digital assistant to digital colleague.",
+      "url": "https://www.austinforum.org/events/may-5-2026",
+      "source": "austinforum.org",
+      "category": "ai",
+      "tags": ["AI", "Agents", "Panel"]
+    },
+    {
+      "title": "DECA @ Austin Small Business Week: A.I. For Business",
+      "date": "May 7",
+      "time": "4:30 PM",
+      "location": "Austin Energy Headquarters, Austin TX",
+      "description": "The Diversity Ethnic Chamber Alliance brings together small business leaders and entrepreneurs to explore how AI applies in real, practical ways—tailored for business owners navigating Austin's tech economy.",
+      "url": "https://www.facebook.com/events/1693085172053546/",
+      "source": "facebook.com / austintexas.gov",
+      "category": "ai",
+      "tags": ["AI", "Startup", "Workshop"]
+    },
+    {
+      "title": "AITX Community × Codex Hackathon",
+      "date": "May 8–10",
+      "time": "Starts May 8 · Full weekend",
+      "location": "Antler VC · 800 Brazos St (Brazos entrance), Austin TX",
+      "description": "A full weekend hackathon building with OpenAI's Codex alongside Austin's AI builder community. Hosted by Jake O'Shea & Michael Daigler. $17,500 in prizes—$10K API credits + ChatGPT Pro for 1st place. Spots are limited.",
+      "url": "https://luma.com/aitx-codex-hackathon",
+      "source": "luma.com / aitxcommunity.com",
+      "category": "ai",
+      "tags": ["AI", "Hackathon", "Agents", "LLM"]
+    },
+    {
+      "title": "Elevate Your Human Shield",
+      "date": "May 9",
+      "time": "2:15–4:45 PM",
+      "location": "Twin Oaks Branch · Austin Public Library, Austin TX",
+      "description": "A cybersecurity workshop examining where emotional manipulation, cognitive bias, and human vulnerability intersect with rapidly advancing AI—covering AI-driven threats and practical defense strategies.",
+      "url": "https://www.eventbrite.com/e/elevate-your-human-shield-tickets-1987094137055",
+      "source": "eventbrite.com",
+      "category": "ai",
+      "tags": ["AI", "Tech", "Workshop"]
+    }
+  ],
+  "otherEvents": [
+    {
+      "title": "Austin Small Business Week — State of Small Business Breakfast",
+      "date": "May 4",
+      "time": "Morning",
+      "location": "Austin TX",
+      "description": "Kickoff panel featuring speakers from Austin PBS, the Federal Reserve Bank of Dallas, the SBA, and Opportunity Austin — covering the economic outlook and how AI is reshaping small business in Austin.",
+      "url": "https://www.austintexas.gov/economic-development/events/state-small-business-austin-economic-outlook-2026",
+      "source": "austintexas.gov",
+      "category": "other",
+      "tags": ["Startup", "Networking"]
+    },
+    {
+      "title": "Consumer Week Walk & Talk",
+      "date": "May 8",
+      "time": "Morning",
+      "location": "Around Lady Bird Lake, Austin TX",
+      "description": "Kick off ATX Consumer Week with Marc Nathan, Bree Whitehead, and Ben Pfeffer on a 2.5-mile walk (or ruck) around the lake. Easy networking at a good pace.",
+      "url": null,
+      "source": "Austin Business Review",
+      "category": "other",
+      "tags": ["Networking", "Community"]
+    },
+    {
+      "title": "League of Originals",
+      "date": "May 8",
+      "time": "Evening",
+      "location": "Assembly Hall, Austin TX",
+      "description": "500+ DTC founders gathering at Assembly Hall. Also has an associated retreat May 6–7. One of Austin's larger consumer founder community events.",
+      "url": null,
+      "source": "Austin Business Review",
+      "category": "other",
+      "tags": ["Startup", "Networking", "Community"]
+    },
+    {
+      "title": "Founders & Funders Social Dance",
+      "date": "May 9",
+      "time": "Evening",
+      "location": "Austin TX",
+      "description": "No pitches, no panels — just laid-back music and two-steppin' with Kevad Belle, Andrew Lane, Zeke Torres and others from the Austin investor and founder community.",
+      "url": null,
+      "source": "Austin Business Review",
+      "category": "other",
+      "tags": ["Networking", "Community"]
+    },
+    {
+      "title": "Austin Under 40 Awards Gala",
+      "date": "May 9",
+      "time": "5:30–11:00 PM",
+      "location": "JW Marriott · 110 E 2nd St, Austin TX 78701",
+      "description": "The 27th annual gala presented by Loewy Law Firm, hosted by YMBL. Honors Austin's most impressive professionals under 40 across 18 categories, with one named Austinite of the Year. Benefits Austin Sunshine Camps.",
+      "url": "https://app.betterunite.com/ymbl-2026austinunder40awardsgala",
+      "source": "austinunder40.org",
+      "category": "other",
+      "tags": ["Community", "Networking"]
+    }
+  ]
+}
