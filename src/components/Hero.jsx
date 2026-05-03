@@ -42,8 +42,7 @@ export default function Hero({ weekOf, generatedAt }) {
           className="text-lg sm:text-xl leading-relaxed mb-10 max-w-xl mx-auto"
           style={{ color: 'var(--text-secondary)', fontFamily: 'Inter, sans-serif' }}
         >
-          The week's top AI and business events, curated every Sunday morning so
-          you never miss what's happening in your city.
+          The week's top AI and business events in Austin.
         </p>
 
         <div
