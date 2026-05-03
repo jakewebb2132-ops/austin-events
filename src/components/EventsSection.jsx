@@ -5,7 +5,7 @@ export default function EventsSection({ title, eyebrow, events }) {
 
   return (
     <section>
-      <div className="mb-8">
+      <div className="mb-2">
         <p
           className="text-xs font-medium uppercase tracking-widest2 mb-2"
           style={{ fontFamily: '"Space Grotesk", sans-serif', color: 'var(--accent)' }}
@@ -18,13 +18,10 @@ export default function EventsSection({ title, eyebrow, events }) {
         >
           {title}
         </h2>
-        <div
-          className="mt-3 h-px w-12"
-          style={{ background: 'var(--accent)', opacity: 0.4 }}
-        />
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {/* List — first item gets a top border, each item adds its own bottom border */}
+      <div style={{ borderTop: '1px solid var(--border)' }}>
         {events.map((event, i) => (
           <EventCard key={`${event.title}-${i}`} event={event} />
         ))}
