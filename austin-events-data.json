@@ -15,6 +15,28 @@
       "source": "austinforum.org",
       "category": "ai",
       "tags": ["AI", "Agents", "Panel"]
+    },
+    {
+      "title": "VibeCoding for Indie Entrepreneurs",
+      "date": "May 4",
+      "time": "TBD",
+      "location": "Epoch Coffee",
+      "description": "John Davison hosts a VibeCoding session.",
+      "url": "https://lu.ma/vibecoding-austin",
+      "source": "ethan@austinbusinessreview.com",
+      "category": "ai",
+      "tags": ["AI", "VibeCoding", "Indie"]
+    },
+    {
+      "title": "Prompt Lab",
+      "date": "May 7",
+      "time": "TBD",
+      "location": "Capital Factory",
+      "description": "Gary Shen & Steve Tran's AI brainstorming event.",
+      "url": "https://lu.ma/promptlab-austin",
+      "source": "ethan@austinbusinessreview.com",
+      "category": "ai",
+      "tags": ["AI", "Brainstorming"]
     }
   ],
   "otherEvents": [
