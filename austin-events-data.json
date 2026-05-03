@@ -1,0 +1,33 @@
+{
+  "weekOf": "May 4–10, 2026",
+  "startDate": "2026-05-04",
+  "endDate": "2026-05-10",
+  "generatedAt": "2026-05-03T17:00:00-05:00",
+  "sources": ["austinforum.org", "lu.ma/austin"],
+  "aiEvents": [
+    {
+      "title": "Beyond Chatbots—The Rise of the AI Agent",
+      "date": "May 5",
+      "time": "5:15 PM (networking) · 6:15–7:45 PM (program)",
+      "location": "ACC Rio Grande, Bldg 3000 · 1218 West Ave, Austin TX 78701",
+      "description": "Jay Boisseau leads an expert panel on the shift from generative chat to actionable AI agents.",
+      "url": "https://www.austinforum.org/events/may-5-2026",
+      "source": "austinforum.org",
+      "category": "ai",
+      "tags": ["AI", "Agents", "Panel"]
+    }
+  ],
+  "otherEvents": [
+    {
+      "title": "Austin Under 40 Awards Gala",
+      "date": "May 9",
+      "time": "5:30–11:00 PM",
+      "location": "JW Marriott · 110 E 2nd St",
+      "description": "27th annual gala honoring Austin's top professionals under 40.",
+      "url": "https://app.betterunite.com/ymbl-2026austinunder40awardsgala",
+      "source": "austinunder40.org",
+      "category": "other",
+      "tags": ["Community", "Networking"]
+    }
+  ]
+}

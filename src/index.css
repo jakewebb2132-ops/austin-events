@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main: #ffffff;
+  --bg-surface: rgba(255, 255, 255, 0.75);
+  --bg-card: rgba(255, 255, 255, 0.92);
+  --text-primary: #1a3a6e;
+  --text-secondary: #4a5e7a;
+  --text-muted: #8a9ab5;
+  --accent: #3a6fbc;
+  --accent-hover: #225191;
+  --border: rgba(58, 111, 188, 0.15);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #ffffff 0%, #e2ebf5 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-primary);
+}
+
+@layer utilities {
+  .glass-nav {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .glass-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .glass-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(58, 111, 188, 0.12);
+  }
+
+  .btn-outline {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border: 1.5px solid var(--accent);
+    color: var(--accent);
+    border-radius: 4px;
+    padding: 0.5rem 1.25rem;
+    transition: background 0.15s ease, color 0.15s ease;
+    white-space: nowrap;
+  }
+
+  .btn-outline:hover {
+    background: var(--accent);
+    color: #ffffff;
+  }
+
+  .btn-solid {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: var(--accent);
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 0.5rem 1.25rem;
+    transition: background 0.15s ease;
+    white-space: nowrap;
+  }
+
+  .btn-solid:hover {
+    background: var(--accent-hover);
+  }
+}
