@@ -1,16 +1,72 @@
 {
-  "weekOf": "May 11\u201317, 2026",
-  "startDate": "2026-05-11",
+  "weekOf": "May 4\u201317, 2026",
+  "startDate": "2026-05-04",
   "endDate": "2026-05-17",
-  "generatedAt": "2026-05-04T17:35:36Z",
+  "generatedAt": "2026-05-04T18:05:52Z",
   "sources": [
     "austinbusinessreview.com",
     "austinforum.org",
+    "capitalfactory.com",
     "do512.com",
     "eventbrite.com",
     "lu.ma/austin"
   ],
   "aiEvents": [
+    {
+      "title": "May 4 @ 6:00pmI.M.P.A.C.T. Innovation in MedTech, Pharma, AI and Clinical Trials Meetup",
+      "date": "May 4",
+      "time": "6:00pm",
+      "location": "Capital Factory, Austin TX",
+      "description": "",
+      "url": "https://capitalfactory.com/event/i-m-p-a-c-t-innovation-in-medtech-pharma-ai-and-clinical-trials-meetup-3/",
+      "source": "capitalfactory.com",
+      "tags": [
+        "AI",
+        "Networking"
+      ],
+      "category": "ai"
+    },
+    {
+      "title": "May 5 @ 7:00pmAustin Deep Learning Meetup",
+      "date": "May 5",
+      "time": "7:00pm",
+      "location": "Capital Factory, Austin TX",
+      "description": "",
+      "url": "https://capitalfactory.com/event/austin-deep-learning-meetup-3/",
+      "source": "capitalfactory.com",
+      "tags": [
+        "AI",
+        "Networking"
+      ],
+      "category": "ai"
+    },
+    {
+      "title": "Learn Notebook LM, a FREE Google AI Tool - 2X Your Income",
+      "date": "May 6",
+      "time": "11:30 PM",
+      "location": "Capital Factory, 701 Brazos St, Austin, TX 78701, USA",
+      "description": "",
+      "url": "https://lu.ma/mjy7rhu7",
+      "source": "lu.ma/austin",
+      "tags": [
+        "AI"
+      ],
+      "category": "ai"
+    },
+    {
+      "title": "May 6 @ 5:30pmAustin AI Developers Group Meetup",
+      "date": "May 6",
+      "time": "5:30pm",
+      "location": "Capital Factory, Austin TX",
+      "description": "",
+      "url": "https://capitalfactory.com/event/austin-ai-developers-group-meetup-3/",
+      "source": "capitalfactory.com",
+      "tags": [
+        "AI",
+        "Networking"
+      ],
+      "category": "ai"
+    },
     {
       "title": "Austin | Claude Code for Everyone",
       "date": "May 11",
@@ -124,6 +180,422 @@
     }
   ],
   "otherEvents": [
+    {
+      "title": "VibeCoding for Indie Entrepreneurs",
+      "date": "May 4",
+      "time": "",
+      "location": "",
+      "description": "",
+      "url": "https://luma.com/fc234v4a",
+      "source": "austinbusinessreview.com",
+      "tags": [
+        "Tech"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "VibeCoding for Indie Entrepreneurs (live + happy hour)",
+      "date": "May 4",
+      "time": "9:00 PM",
+      "location": "The Red Fridge Society, 508 Oakland Ave, Austin, TX 78703, USA",
+      "description": "",
+      "url": "https://lu.ma/fc234v4a",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "May 4 @ 6:00pmAustin Startup Meetup",
+      "date": "May 4",
+      "time": "6:00pm",
+      "location": "Capital Factory, Austin TX",
+      "description": "",
+      "url": "https://capitalfactory.com/event/austin-startup-meetup-3/",
+      "source": "capitalfactory.com",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "May 4 @ 7:00pmATXR \u2013 Austin\u2019s AR/VR Meetup",
+      "date": "May 4",
+      "time": "7:00pm",
+      "location": "Capital Factory, Austin TX",
+      "description": "",
+      "url": "https://capitalfactory.com/event/atxr-austins-ar-vr-meetup-4/",
+      "source": "capitalfactory.com",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "Mexico de Norte a Sur: A Cinco de Mayo Celebration/Networking Event",
+      "date": "May 5",
+      "time": "11:30 PM",
+      "location": "Vuka - North Loop, 5540 N Lamar Blvd, Austin, TX 78751, USA",
+      "description": "",
+      "url": "https://lu.ma/tm4stsrt",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "Out in Tech Demo Night 2.0",
+      "date": "May 5",
+      "time": "11:30 PM",
+      "location": "Capital Factory, 701 Brazos St, Austin, TX 78701, USA",
+      "description": "",
+      "url": "https://lu.ma/nyy86vei",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Tech"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "The Health Hustlers: An Exclusive Networking Event for Health/Wellness Professionals",
+      "date": "May 5",
+      "time": "11:30 PM",
+      "location": "2043 S Lamar Blvd, Austin, TX 78704, USA",
+      "description": "",
+      "url": "https://lu.ma/bv1f2r16",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "May 5 @ 5:00pmFacilitation Lab Austin Meetup",
+      "date": "May 5",
+      "time": "5:00pm",
+      "location": "Capital Factory, Austin TX",
+      "description": "",
+      "url": "https://capitalfactory.com/event/facilitation-lab-austin-meetup-3/",
+      "source": "capitalfactory.com",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "May 5 @ 6:00pmTech & Tequila Meetup",
+      "date": "May 5",
+      "time": "6:00pm",
+      "location": "Capital Factory, Austin TX",
+      "description": "",
+      "url": "https://capitalfactory.com/event/tech-tequila-meetup-3/",
+      "source": "capitalfactory.com",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "May 5 @ 6:30pmFounder-Led Sales Meetup",
+      "date": "May 5",
+      "time": "6:30pm",
+      "location": "Capital Factory, Austin TX",
+      "description": "",
+      "url": "https://capitalfactory.com/event/founder-led-sales-meetup-3/",
+      "source": "capitalfactory.com",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "May 5 @ 6:30pmOut in Tech Austin Meetup",
+      "date": "May 5",
+      "time": "6:30pm",
+      "location": "Capital Factory, Austin TX",
+      "description": "",
+      "url": "https://capitalfactory.com/event/out-in-tech-austin-meetup-2/",
+      "source": "capitalfactory.com",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "iFly.vc Consumer Summit 2026",
+      "date": "May 6",
+      "time": "2:00 PM",
+      "location": "",
+      "description": "",
+      "url": "https://lu.ma/ConsumerSummit2026",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Tech"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "Open State Workshop",
+      "date": "May 6",
+      "time": "11:30 PM",
+      "location": "Casa de Luz Village, 1701 Toomey Rd, Austin, TX 78704, USA",
+      "description": "",
+      "url": "https://lu.ma/iw2ihrx7",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Workshop"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "Come and Take It Productions UADA and MORTIIS: The Witches of Dystopia Tour",
+      "date": "May 6",
+      "time": "",
+      "location": "Austin, TX",
+      "description": "",
+      "url": "https://www.do512.com/events/2026/5/6/uada-and-mortiis-the-witches-of-dystopia-tour-tickets",
+      "source": "do512.com",
+      "tags": [
+        "Tech"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "May 6 @ 6:00pmProsper XO Meetup",
+      "date": "May 6",
+      "time": "6:00pm",
+      "location": "Capital Factory, Austin TX",
+      "description": "",
+      "url": "https://capitalfactory.com/event/prosper-xo-meetup-3/",
+      "source": "capitalfactory.com",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "May 6 @ 6:30pmAI Automation and Marketing Meetup",
+      "date": "May 6",
+      "time": "6:30pm",
+      "location": "Capital Factory, Austin TX",
+      "description": "",
+      "url": "https://capitalfactory.com/event/ai-automation-and-marketing-meetup-3/",
+      "source": "capitalfactory.com",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "May 6 @ 6:30pmATX Golang Meetup",
+      "date": "May 6",
+      "time": "6:30pm",
+      "location": "Capital Factory, Austin TX",
+      "description": "",
+      "url": "https://capitalfactory.com/event/atx-golang-meetup-2/",
+      "source": "capitalfactory.com",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "Investor Breakfast",
+      "date": "May 7",
+      "time": "",
+      "location": "",
+      "description": "",
+      "url": "https://luma.com/a1ajwa5z",
+      "source": "austinbusinessreview.com",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "Untangling Dialogs in React Router | Remix Austin",
+      "date": "May 7",
+      "time": "12:00 AM",
+      "location": "Cloudflare, 405 Comal St, Austin, TX 78702, USA",
+      "description": "",
+      "url": "https://lu.ma/x9sohvov",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Tech"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "Yaupon Tasting w/ December (founders)",
+      "date": "May 7",
+      "time": "2:30 PM",
+      "location": "The Red Fridge Society, 508 Oakland Ave, Austin, TX 78703, USA",
+      "description": "",
+      "url": "https://lu.ma/2dqkoodu",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Startup"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "ATX Builders Meetup #20",
+      "date": "May 7",
+      "time": "10:30 PM",
+      "location": "",
+      "description": "",
+      "url": "https://lu.ma/mg51svgc",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "9th Austin Hardware Meetup | Health Hardware and Medical Devices",
+      "date": "May 7",
+      "time": "11:00 PM",
+      "location": "",
+      "description": "",
+      "url": "https://lu.ma/imi6o0fa",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "May 7 @ 5:00pmSWAN Q1 2026 Pitch Event",
+      "date": "May 7",
+      "time": "5:00pm",
+      "location": "Capital Factory, Austin TX",
+      "description": "",
+      "url": "https://capitalfactory.com/event/swan-q1-2026-pitch-event/",
+      "source": "capitalfactory.com",
+      "tags": [
+        "Startup"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "May 7 @ 6:30pmFounders Situation Lab Meetup",
+      "date": "May 7",
+      "time": "6:30pm",
+      "location": "Capital Factory, Austin TX",
+      "description": "",
+      "url": "https://capitalfactory.com/event/founders-alignment-lab-meetup-2/",
+      "source": "capitalfactory.com",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "Female Founders Meet Up: Mother's Day Edition \ud83c\udf37",
+      "date": "May 8",
+      "time": "1:30 PM",
+      "location": "",
+      "description": "",
+      "url": "https://lu.ma/a0uw2vvm",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "AITX Community x Codex Hackathon",
+      "date": "May 8",
+      "time": "10:00 PM",
+      "location": "Antler VC, 800 Brazos St #340, Austin, TX 78701, USA",
+      "description": "",
+      "url": "https://lu.ma/aitx-codex-hackathon",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Hackathon"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "Founders & Funders Social Dance",
+      "date": "May 9",
+      "time": "",
+      "location": "",
+      "description": "",
+      "url": "https://luma.com/1nwcluuf",
+      "source": "austinbusinessreview.com",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "Founders Running Club :: Austin",
+      "date": "May 9",
+      "time": "1:00 PM",
+      "location": "Estacionamiento Edward Rendon Park, 1601-1999 Nash Hernandez Senior Rd, Austin, TX 78702, USA",
+      "description": "",
+      "url": "https://lu.ma/kyucmljf",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Startup"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "founders & funders: social dance",
+      "date": "May 9",
+      "time": "5:00 PM",
+      "location": "",
+      "description": "",
+      "url": "https://lu.ma/1nwcluuf",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Networking"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "Come and Take It Productions The Decibel Magazine Tour 2026",
+      "date": "May 9",
+      "time": "",
+      "location": "Austin, TX",
+      "description": "",
+      "url": "https://www.do512.com/events/2026/5/9/the-decibel-magazine-tour-2026-tickets",
+      "source": "do512.com",
+      "tags": [
+        "Tech"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "Hack Fair - AITX<>Codex Community Hackathon",
+      "date": "May 10",
+      "time": "7:00 PM",
+      "location": "",
+      "description": "",
+      "url": "https://lu.ma/hackfair-codex",
+      "source": "lu.ma/austin",
+      "tags": [
+        "Hackathon"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "Come and Take It Productions Cold / Alien Ant Farm",
+      "date": "May 10",
+      "time": "",
+      "location": "Austin, TX",
+      "description": "",
+      "url": "https://www.do512.com/events/2026/5/10/cold-alien-ant-farm-tickets",
+      "source": "do512.com",
+      "tags": [
+        "Tech"
+      ],
+      "category": "other"
+    },
     {
       "title": "Come and Take It Productions Essenger",
       "date": "May 13",

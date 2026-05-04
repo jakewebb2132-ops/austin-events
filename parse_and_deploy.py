@@ -288,20 +288,12 @@ def deploy():
 # Main
 # ─────────────────────────────────────────────
 
-def _upcoming_monday(today: datetime) -> datetime:
-    """Return the coming Monday (or today if today is Monday)."""
-    days_until = (7 - today.weekday()) % 7
-    if days_until == 0:
-        days_until = 7  # if today is Monday, target next Monday
-    return (today + timedelta(days=days_until)).replace(hour=0, minute=0, second=0, microsecond=0)
-
-
 def main():
     no_deploy = "--no-deploy" in sys.argv
 
     today      = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
-    start_date = _upcoming_monday(today)   # next Monday
-    end_date   = start_date + timedelta(days=6)  # Sunday
+    start_date = today                          # start from today
+    end_date   = today + timedelta(days=13)     # two full weeks out
 
     raw_events = fetch_all_sources(start_date, end_date)
     if not raw_events:
