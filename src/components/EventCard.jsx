@@ -31,28 +31,39 @@ function Tag({ label }) {
 }
 
 function DateBadge({ date }) {
-  // Parse "May 5" or "May 8–10" — grab the first number
-  const parts = date.split(' ')
+  const parts = (date || '').split(' ')
   const month = parts[0]?.slice(0, 3).toUpperCase() ?? ''
-  const day = parts[1]?.split('–')[0] ?? ''
+  const day   = parts[1]?.split('–')[0] ?? ''
+  const empty = !month || !day
 
   return (
     <div
       className="flex-shrink-0 w-14 flex flex-col items-center justify-center py-2 rounded-[6px]"
       style={{ background: 'rgba(58,111,188,0.07)', minHeight: '3.25rem' }}
     >
-      <span
-        className="text-[10px] font-semibold tracking-widest2 uppercase leading-none"
-        style={{ fontFamily: '"Space Grotesk", sans-serif', color: 'var(--accent)' }}
-      >
-        {month}
-      </span>
-      <span
-        className="text-xl font-bold leading-tight"
-        style={{ fontFamily: '"Space Grotesk", sans-serif', color: 'var(--text-primary)' }}
-      >
-        {day}
-      </span>
+      {empty ? (
+        <span
+          className="text-[10px] font-semibold uppercase leading-none"
+          style={{ fontFamily: '"Space Grotesk", sans-serif', color: 'var(--text-muted)' }}
+        >
+          TBD
+        </span>
+      ) : (
+        <>
+          <span
+            className="text-[10px] font-semibold tracking-widest2 uppercase leading-none"
+            style={{ fontFamily: '"Space Grotesk", sans-serif', color: 'var(--accent)' }}
+          >
+            {month}
+          </span>
+          <span
+            className="text-xl font-bold leading-tight"
+            style={{ fontFamily: '"Space Grotesk", sans-serif', color: 'var(--text-primary)' }}
+          >
+            {day}
+          </span>
+        </>
+      )}
     </div>
   )
 }

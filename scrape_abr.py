@@ -41,6 +41,15 @@ ABR_SKIP_DOMAINS = {
     "linkedin.com", "twitter.com", "loewylaw.com", "gracejonesofsalado.com",
 }
 
+# Link text that's a CTA, not an event title
+ABR_JUNK_RE = re.compile(
+    r"(?i)^(email(\s+me)?(\s+here)?|register(\s+here)?|sign\s+up|rsvp|"
+    r"click\s+here|learn\s+more|read\s+more|view\s+(all|more)|"
+    r"subscribe|get\s+tickets|buy\s+tickets|apply(\s+now)?|"
+    r"join\s+us|more\s+info|find\s+out|https?://)"
+    r"|\bis\s+an?\s+(upcoming|great|new)\b"
+)
+
 def scrape_abr():
     resp = requests.get(ABR_ARCHIVE, headers=HEADERS, timeout=15)
     resp.raise_for_status()
@@ -66,9 +75,11 @@ def scrape_abr():
     for a in soup.find_all("a", href=True):
         text = a.get_text(strip=True)
         href = a["href"]
-        if not text or len(text) < 5:
+        if not text or len(text) < 10:
             continue
         if any(d in href for d in ABR_SKIP_DOMAINS):
+            continue
+        if ABR_JUNK_RE.search(text):
             continue
         parent_text = ""
         for parent in a.parents:
@@ -207,9 +218,12 @@ def scrape_luma_austin(start_date=None, end_date=None):
             except Exception:
                 pass
 
+        description = (ev.get("description") or "").strip()[:300]
+
         events.append({
             "name": name, "url": url, "date": date_fmt,
-            "time": time_fmt, "location": location, "source": "lu.ma/austin",
+            "time": time_fmt, "location": location,
+            "description": description, "source": "lu.ma/austin",
         })
 
     print(f"[Luma] Found {len(events)} events")
@@ -497,9 +511,10 @@ def scrape_meetup_rss(start_date=None, end_date=None):
 
             date_str = event_dt.strftime("%B %-d") if event_dt else ""
 
-            # Try to extract time and location from description
+            # Extract time/location and clean description from RSS <description>
             time_str = ""
             location_str = "Austin, TX"
+            desc_clean = ""
             if desc:
                 tm = re.search(r"(\d+:\d+\s*(?:AM|PM|am|pm))", desc)
                 if tm:
@@ -507,6 +522,7 @@ def scrape_meetup_rss(start_date=None, end_date=None):
                 loc = re.search(r"(?:Location|Venue|Address)[:\s]+([^\n<]{5,60})", desc, re.IGNORECASE)
                 if loc:
                     location_str = loc.group(1).strip()
+                desc_clean = BeautifulSoup(desc, "html.parser").get_text(" ", strip=True)[:300]
 
             events.append({
                 "name": title,
@@ -514,6 +530,7 @@ def scrape_meetup_rss(start_date=None, end_date=None):
                 "date": date_str,
                 "time": time_str,
                 "location": location_str,
+                "description": desc_clean,
                 "source": "meetup.com",
             })
 

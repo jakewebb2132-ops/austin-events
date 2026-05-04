@@ -1,226 +1,16 @@
 {
-  "weekOf": "May 4\u201311, 2026",
-  "startDate": "2026-05-04",
-  "endDate": "2026-05-11",
-  "generatedAt": "2026-05-04T13:07:32Z",
+  "weekOf": "May 11\u201317, 2026",
+  "startDate": "2026-05-11",
+  "endDate": "2026-05-17",
+  "generatedAt": "2026-05-04T17:35:36Z",
   "sources": [
     "austinbusinessreview.com",
     "austinforum.org",
-    "capitalfactory.com",
     "do512.com",
     "eventbrite.com",
     "lu.ma/austin"
   ],
   "aiEvents": [
-    {
-      "title": "May 3: The AI Implementation Club:",
-      "date": "May 3",
-      "time": "",
-      "location": "",
-      "description": "",
-      "url": "https://luma.com/pbahdmj6",
-      "source": "austinbusinessreview.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Email me here",
-      "date": "May 1",
-      "time": "",
-      "location": "",
-      "description": "",
-      "url": "/cdn-cgi/l/email-protection#e683928e8788a6879395928f888493958f888395959483908f8391c885898b",
-      "source": "austinbusinessreview.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Discussion of \"Co-Intelligence: Living and Working with AI\"",
-      "date": "",
-      "time": "7:15\u202fPM8:30\u202fPM",
-      "location": "Looking to the future as opposed to looking at the past, how do you see AI changing and evolving as a workplace and at-home tool over the next few years?",
-      "description": "",
-      "url": "https://www.austinforum.org/events/april-29-2026",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Building Real Software with AI: A Hands-On Workshop",
-      "date": "",
-      "time": "1:30\u202fPM4:30\u202fPM",
-      "location": "Google CalendarICS",
-      "description": "",
-      "url": "https://www.austinforum.org/events/april-14-2026",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "The Great AI Debate",
-      "date": "",
-      "time": "6:15\u202fPM7:45\u202fPM",
-      "location": "Google CalendarICS",
-      "description": "",
-      "url": "https://www.austinforum.org/events/april-7-2026",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "GenAI 2.0: The \"Introduction to Generative AI\" Second Edition Launch Party",
-      "date": "",
-      "time": "7:00\u202fPM9:00\u202fPM",
-      "location": "Networking:Connect with a diverse group of tech professionals, researchers, and enthusiasts over drinks and appetizers.",
-      "description": "",
-      "url": "https://www.austinforum.org/events/march-19-2026",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Emerging Technologies in the Fight Against Cancer - Targeted Therapies, Personalized Medicine, and AI",
-      "date": "",
-      "time": "6:15\u202fPM7:45\u202fPM",
-      "location": "Google CalendarICS",
-      "description": "",
-      "url": "https://www.austinforum.org/events/march-3-2026",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Supercomputing, Cloud Computing, and AI Factories: The Importance of Speed AND Scale",
-      "date": "",
-      "time": "6:15\u202fPM7:45\u202fPM",
-      "location": "Google CalendarICS",
-      "description": "",
-      "url": "https://www.austinforum.org/events/december-2-2025",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Reclaiming Your Focus: A Discussion on \"Digital Minimalism\"",
-      "date": "",
-      "time": "7:15\u202fPM8:30\u202fPM",
-      "location": "Cultivate deeper, more meaningful connections, both online and off.",
-      "description": "",
-      "url": "https://www.austinforum.org/events/november-25-2025",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Level Up: An AI-Assisted Coding Workshop & Showdown",
-      "date": "",
-      "time": "5:30\u202fPM7:30\u202fPM",
-      "location": "Compete!Enter our friendly coding contest for bragging rights and cool prizes.",
-      "description": "",
-      "url": "https://www.austinforum.org/events/november-10-2025",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "The Smart Factory: AI, Simulation, and the Future of Making Things",
-      "date": "",
-      "time": "6:15\u202fPM7:45\u202fPM",
-      "location": "Google CalendarICS",
-      "description": "",
-      "url": "https://www.austinforum.org/events/november-5-2025",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "AI Happy hour at Remedy Bar",
-      "date": "",
-      "time": "7:00\u202fPM9:00\u202fPM",
-      "location": "Google CalendarICS",
-      "description": "",
-      "url": "https://www.austinforum.org/events/october-23-2025",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Summer 2025 Tech Brainstorm & Mixer!",
-      "date": "",
-      "time": "5:30\u202fPM7:30\u202fPM",
-      "location": "And more!Help us design events that empower Austin tech professionals, executives, educators, and thought leaders to improve their companies and careers, or even start new ventures.",
-      "description": "",
-      "url": "https://www.austinforum.org/events/july-24-2025",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "XAI on 5/5",
-      "date": "May 6",
-      "time": "12:30 AM",
-      "location": "",
-      "description": "",
-      "url": "https://lu.ma/m3q1qpen",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "The Human Behind the Art: Mental Health & Artist Sustainability",
-      "date": "May 6",
-      "time": "11:00 PM",
-      "location": "Capital Factory, 701 Brazos St, Austin, TX 78701, USA",
-      "description": "",
-      "url": "https://lu.ma/774q8ykx",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Learn Notebook LM, a FREE Google AI Tool - 2X Your Income",
-      "date": "May 6",
-      "time": "11:30 PM",
-      "location": "Capital Factory, 701 Brazos St, Austin, TX 78701, USA",
-      "description": "",
-      "url": "https://lu.ma/mjy7rhu7",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "ATXCB @ In Plain Sight",
-      "date": "May 7",
-      "time": "9:00 PM",
-      "location": "In Plain Sight, 612 Brazos St Suite C, Austin, TX 78701, USA",
-      "description": "",
-      "url": "https://lu.ma/kl94kt8o",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "AITX Community x Codex Hackathon",
-      "date": "May 8",
-      "time": "10:00 PM",
-      "location": "Antler VC, 800 Brazos St #340, Austin, TX 78701, USA",
-      "description": "",
-      "url": "https://lu.ma/aitx-codex-hackathon",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Hack Fair - AITX<>Codex Community Hackathon",
-      "date": "May 10",
-      "time": "7:00 PM",
-      "location": "",
-      "description": "",
-      "url": "https://lu.ma/hackfair-codex",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "ai"
-    },
     {
       "title": "Austin | Claude Code for Everyone",
       "date": "May 11",
@@ -229,658 +19,161 @@
       "description": "",
       "url": "https://lu.ma/9jhydhhp",
       "source": "lu.ma/austin",
-      "tags": [],
+      "tags": [
+        "AI",
+        "LLM"
+      ],
       "category": "ai"
     },
     {
-      "title": "Raye - This Tour May Contain New Music w/ Absolutely & Amma",
-      "date": "May 4",
-      "time": "",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.do512.com/events/2026/5/4/raye-this-tour-may-contain-new-music-tickets",
-      "source": "do512.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Neon Rainbows Bronco: Queer Linedance Night!",
-      "date": "May 4",
-      "time": "",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.do512.com/events/2026/5/4/lets-have-a-kiki-tickets",
-      "source": "do512.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Hole in the Wall Presents: Cast of 1000s (Residency) ft. Bernardo Mountainair & Pretty Blue",
-      "date": "May 5",
-      "time": "",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.do512.com/events/2026/5/5/cast-of-thousands-tuesday-residency-tickets",
-      "source": "do512.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Friends Fair Austin: Launch Party",
-      "date": "May 6",
-      "time": "",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.do512.com/events/2026/5/6/friends-fair-austin-launch-party-tickets",
-      "source": "do512.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Hole in the Wall Presents: Batty Jr. w / Specific Thing & Helyn Rain",
-      "date": "May 7",
-      "time": "",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.do512.com/events/2026/5/7/batty-jr-w-specific-thing-helyn-rain-tickets",
-      "source": "do512.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Hole in the Wall Presents: Loteria, Maiden, Matt Hollywood",
-      "date": "May 9",
-      "time": "",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.do512.com/events/2026/5/9/loteria-maiden-matt-hollywood-tickets",
-      "source": "do512.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Live Nation Presents Jaguar Sun - Daisy Tour",
-      "date": "May 10",
-      "time": "",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.do512.com/events/2026/5/10/jaguar-sun-daisy-tour-tickets",
-      "source": "do512.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Neon Rainbows Queer Two-Step Night",
-      "date": "May 11",
-      "time": "",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.do512.com/events/2026/5/11/bronco-queer-two-step-workshop-tickets",
-      "source": "do512.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Resound Presents: Terror w/ Pain of Truth, End It, and Start Today",
-      "date": "May 11",
-      "time": "",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.do512.com/events/2026/5/11/terror-w-pain-of-truth-end-it-and-start-today-tickets",
-      "source": "do512.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "May 4 @ 6:00pmI.M.P.A.C.T. Innovation in MedTech, Pharma, AI and Clinical Trials Meetup",
-      "date": "May 4",
-      "time": "6:00pm",
-      "location": "Capital Factory, Austin TX",
-      "description": "",
-      "url": "https://capitalfactory.com/event/i-m-p-a-c-t-innovation-in-medtech-pharma-ai-and-clinical-trials-meetup-3/",
-      "source": "capitalfactory.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "May 5 @ 7:00pmAustin Deep Learning Meetup",
-      "date": "May 5",
-      "time": "7:00pm",
-      "location": "Capital Factory, Austin TX",
-      "description": "",
-      "url": "https://capitalfactory.com/event/austin-deep-learning-meetup-3/",
-      "source": "capitalfactory.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "May 6 @ 5:30pmAustin AI Developers Group Meetup",
-      "date": "May 6",
-      "time": "5:30pm",
-      "location": "Capital Factory, Austin TX",
-      "description": "",
-      "url": "https://capitalfactory.com/event/austin-ai-developers-group-meetup-3/",
-      "source": "capitalfactory.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "May 6 @ 6:30pmAI Automation and Marketing Meetup",
-      "date": "May 6",
-      "time": "6:30pm",
-      "location": "Capital Factory, Austin TX",
-      "description": "",
-      "url": "https://capitalfactory.com/event/ai-automation-and-marketing-meetup-3/",
-      "source": "capitalfactory.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "AI Automation and Business Process Reengineering Workshop | AI Agents",
-      "date": "",
-      "time": "4:00 PM",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.eventbrite.com/e/ai-automation-and-business-process-reengineering-workshop-ai-agents-tickets-1985700168658",
-      "source": "eventbrite.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Leadership in the Age of AI: 1 Day Training in Austin, TX",
-      "date": "",
+      "title": "Become AI Project Ready \u2013 PMI-CPMAI Training Program in Wimberley, TX",
+      "date": "May 12",
       "time": "9:00 AM",
       "location": "Austin, TX",
       "description": "",
-      "url": "https://www.eventbrite.sg/e/leadership-in-the-age-of-ai-1-day-training-in-austin-tx-tickets-1978370586681",
+      "url": "https://www.eventbrite.com/e/become-ai-project-ready-pmi-cpmai-training-program-in-wimberley-tx-tickets-1985868055813",
       "source": "eventbrite.com",
-      "tags": [],
+      "tags": [
+        "AI",
+        "Workshop"
+      ],
       "category": "ai"
     },
     {
-      "title": "Understanding AI",
-      "date": "",
-      "time": "6:00 PM",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.eventbrite.com/e/understanding-ai-tickets-1978852748841",
-      "source": "eventbrite.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "AI & Machine Learning Startups, Investors, Innovators Networking in Austin",
-      "date": "",
-      "time": "7:00 PM",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.eventbrite.com/e/ai-machine-learning-startups-investors-innovators-networking-in-austin-tickets-1987905650313",
-      "source": "eventbrite.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "AI & Machine Learning Start-Ups, Professionals Investors Networking Austin",
-      "date": "",
-      "time": "7:00 PM",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.eventbrite.com/e/ai-machine-learning-start-ups-professionals-investors-networking-austin-tickets-1987906541980",
-      "source": "eventbrite.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "Generative AI for Society and Workplace | San Francisco",
-      "date": "",
-      "time": "10:00 AM",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.eventbrite.com/e/generative-ai-for-society-and-workplace-san-francisco-tickets-1144022113939",
-      "source": "eventbrite.com",
-      "tags": [],
-      "category": "ai"
-    },
-    {
-      "title": "PMI-CPMAI Certification weekend  Training  in  Wimberley, TX",
-      "date": "",
+      "title": "PMI-CPMAI\u00ae Weekend Training\u2013Project in AI Certification in Wimberley, TX",
+      "date": "May 12",
       "time": "9:00 AM",
       "location": "Austin, TX",
       "description": "",
-      "url": "https://www.eventbrite.com/e/pmi-cpmai-certification-weekend-training-in-wimberley-tx-tickets-1985994995493",
+      "url": "https://www.eventbrite.com/e/pmi-cpmai-weekend-trainingproject-in-ai-certification-in-wimberley-tx-tickets-1986420090965",
       "source": "eventbrite.com",
-      "tags": [],
+      "tags": [
+        "AI",
+        "Workshop"
+      ],
       "category": "ai"
     },
     {
-      "title": "AI Profit Con",
-      "date": "",
+      "title": "Harnessing AI for Marketing Innovation | Austin",
+      "date": "May 13",
+      "time": "12:00 PM",
+      "location": "Austin, TX",
+      "description": "",
+      "url": "https://www.eventbrite.com/e/harnessing-ai-for-marketing-innovation-austin-tickets-1048545456687",
+      "source": "eventbrite.com",
+      "tags": [
+        "AI"
+      ],
+      "category": "ai"
+    },
+    {
+      "title": "Artificial Intelligence & Automation 1 Day Workshop |Austin, TX",
+      "date": "May 15",
       "time": "9:00 AM",
       "location": "Austin, TX",
       "description": "",
-      "url": "https://www.eventbrite.com/e/ai-profit-con-tickets-1985732312802",
+      "url": "https://www.eventbrite.com/e/artificial-intelligence-automation-1-day-workshop-austin-tx-tickets-1979961733845",
       "source": "eventbrite.com",
-      "tags": [],
+      "tags": [
+        "AI",
+        "Workshop"
+      ],
+      "category": "ai"
+    },
+    {
+      "title": "AI & Machine Learning Bootcamp \u2013 2 Day Training in Austin, TX",
+      "date": "May 16",
+      "time": "9:00 AM",
+      "location": "Austin, TX",
+      "description": "",
+      "url": "https://www.eventbrite.com/e/ai-machine-learning-bootcamp-2-day-training-in-austin-tx-tickets-1987589369308",
+      "source": "eventbrite.com",
+      "tags": [
+        "AI",
+        "Workshop"
+      ],
+      "category": "ai"
+    },
+    {
+      "title": "PMI-CPMAI\u00ae Weekend Training \u2013Project in AI Certification in Kyle, TX",
+      "date": "May 16",
+      "time": "9:00 AM",
+      "location": "Austin, TX",
+      "description": "",
+      "url": "https://www.eventbrite.com/e/pmi-cpmai-weekend-training-project-in-ai-certification-in-kyle-tx-tickets-1986116045557",
+      "source": "eventbrite.com",
+      "tags": [
+        "AI",
+        "Workshop"
+      ],
+      "category": "ai"
+    },
+    {
+      "title": "PMI-CPMAI\u00ae Weekend Training \u2013 Project in AI Certification in Wimberley, TX",
+      "date": "May 16",
+      "time": "9:00 AM",
+      "location": "Austin, TX",
+      "description": "",
+      "url": "https://www.eventbrite.com/e/pmi-cpmai-weekend-training-project-in-ai-certification-in-wimberley-tx-tickets-1986200280506",
+      "source": "eventbrite.com",
+      "tags": [
+        "AI",
+        "Workshop"
+      ],
       "category": "ai"
     }
   ],
   "otherEvents": [
     {
-      "title": "GSD Camp is an upcoming bootcamp",
-      "date": "May 1",
-      "time": "",
-      "location": "",
-      "description": "",
-      "url": "https://gsdcamp.ai/",
-      "source": "austinbusinessreview.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "May 4: VibeCoding for Indie Entrepreneurs:",
-      "date": "May 4",
-      "time": "",
-      "location": "",
-      "description": "",
-      "url": "https://luma.com/fc234v4a",
-      "source": "austinbusinessreview.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "May 7: Investor Breakfast:",
-      "date": "May 7",
-      "time": "",
-      "location": "",
-      "description": "",
-      "url": "https://luma.com/a1ajwa5z",
-      "source": "austinbusinessreview.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "May 9: Founders & Funders Social Dance:",
-      "date": "May 9",
-      "time": "",
-      "location": "",
-      "description": "",
-      "url": "https://luma.com/1nwcluuf",
-      "source": "austinbusinessreview.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "\"Python: The Documentary\" Screening & Expert Q&A",
-      "date": "",
-      "time": "6:30\u202fPM9:00\u202fPM",
-      "location": "The Future of the Language:A look at the next decade of Python, focusing on performance enhancements and the new \"mobile and web\" frontiers.",
-      "description": "",
-      "url": "https://www.austinforum.org/events/january-14-2026",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "Tech Trends for 2026 (and Beyond!)",
-      "date": "",
-      "time": "6:15\u202fPM7:45\u202fPM",
-      "location": "Google CalendarICS",
-      "description": "",
-      "url": "https://www.austinforum.org/events/january-6-2026",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "The Importance of Connection, Community, and Culture in Tech",
-      "date": "",
-      "time": "6:15\u202fPM7:45\u202fPM",
-      "location": "Google CalendarICS",
-      "description": "",
-      "url": "https://www.austinforum.org/events/october-9-2025",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "Discussion of \u201cCode: The Hidden Language of Computer Hardware and Software\"",
-      "date": "",
-      "time": "7:15\u202fPM8:30\u202fPM",
-      "location": "Anyone who has ever wondered, \"How do computers actually work?\"",
-      "description": "",
-      "url": "https://www.austinforum.org/events/september-25-2025",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "Navigating the Future of Software Development",
-      "date": "",
-      "time": "1:00\u202fPM4:00\u202fPM",
-      "location": "Free accounts set up for select tools (instructions will be provided)",
-      "description": "",
-      "url": "https://www.austinforum.org/events/september-11-2025",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "Code in Flux: Navigating the New Era of Software Development",
-      "date": "",
-      "time": "6:15\u202fPM7:45\u202fPM",
-      "location": "Google CalendarICS",
-      "description": "",
-      "url": "https://www.austinforum.org/events/september-2-2025",
-      "source": "austinforum.org",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "VibeCoding for Indie Entrepreneurs (live + happy hour)",
-      "date": "May 4",
-      "time": "9:00 PM",
-      "location": "The Red Fridge Society, 508 Oakland Ave, Austin, TX 78703, USA",
-      "description": "",
-      "url": "https://lu.ma/fc234v4a",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "Out in Tech Demo Night 2.0",
-      "date": "May 5",
-      "time": "11:30 PM",
-      "location": "Capital Factory, 701 Brazos St, Austin, TX 78701, USA",
-      "description": "",
-      "url": "https://lu.ma/nyy86vei",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "The Health Hustlers: An Exclusive Networking Event for Health/Wellness Professionals",
-      "date": "May 5",
-      "time": "11:30 PM",
-      "location": "2043 S Lamar Blvd, Austin, TX 78704, USA",
-      "description": "",
-      "url": "https://lu.ma/bv1f2r16",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "iFly.vc Consumer Summit 2026",
-      "date": "May 6",
-      "time": "2:00 PM",
-      "location": "",
-      "description": "",
-      "url": "https://lu.ma/ConsumerSummit2026",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "Open State Workshop",
-      "date": "May 6",
-      "time": "11:30 PM",
-      "location": "Casa de Luz Village, 1701 Toomey Rd, Austin, TX 78704, USA",
-      "description": "",
-      "url": "https://lu.ma/iw2ihrx7",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "Yaupon Tasting w/ December (founders)",
-      "date": "May 7",
-      "time": "2:30 PM",
-      "location": "The Red Fridge Society, 508 Oakland Ave, Austin, TX 78703, USA",
-      "description": "",
-      "url": "https://lu.ma/2dqkoodu",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "ATX Builders Meetup #20",
-      "date": "May 7",
-      "time": "10:30 PM",
-      "location": "",
-      "description": "",
-      "url": "https://lu.ma/mg51svgc",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "9th Austin Hardware Meetup | Health Hardware and Medical Devices",
-      "date": "May 7",
-      "time": "11:00 PM",
-      "location": "",
-      "description": "",
-      "url": "https://lu.ma/imi6o0fa",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "Female Founders Meet Up: Mother's Day Edition \ud83c\udf37",
-      "date": "May 8",
-      "time": "1:30 PM",
-      "location": "",
-      "description": "",
-      "url": "https://lu.ma/a0uw2vvm",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "Founders Running Club :: Austin",
-      "date": "May 9",
-      "time": "1:00 PM",
-      "location": "Estacionamiento Edward Rendon Park, 1601-1999 Nash Hernandez Senior Rd, Austin, TX 78702, USA",
-      "description": "",
-      "url": "https://lu.ma/kyucmljf",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "founders & funders: social dance",
-      "date": "May 9",
-      "time": "5:00 PM",
-      "location": "",
-      "description": "",
-      "url": "https://lu.ma/1nwcluuf",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "Austin Conscious Connection for founders, leaders, and creatives",
-      "date": "May 11",
-      "time": "11:30 PM",
-      "location": "",
-      "description": "",
-      "url": "https://lu.ma/6ou8z43z",
-      "source": "lu.ma/austin",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "Come and Take It Productions UADA and MORTIIS: The Witches of Dystopia Tour",
-      "date": "May 6",
+      "title": "Come and Take It Productions Essenger",
+      "date": "May 13",
       "time": "",
       "location": "Austin, TX",
       "description": "",
-      "url": "https://www.do512.com/events/2026/5/6/uada-and-mortiis-the-witches-of-dystopia-tour-tickets",
+      "url": "https://www.do512.com/events/2026/5/13/essenger-tickets",
       "source": "do512.com",
-      "tags": [],
+      "tags": [
+        "Tech"
+      ],
       "category": "other"
     },
     {
-      "title": "Wednesdays with Tate Mayeux",
-      "date": "May 6",
+      "title": "Lumber Society Presents: Earth Paints & Mineral Pigments Workshop",
+      "date": "May 14",
       "time": "",
       "location": "Austin, TX",
       "description": "",
-      "url": "https://www.do512.com/events/2026/5/6/wednesdays-with-tate-mayeux-tickets",
+      "url": "https://www.do512.com/events/2026/5/14/earth-paints-mineral-pigments-workshop-tickets",
       "source": "do512.com",
-      "tags": [],
+      "tags": [
+        "Workshop"
+      ],
       "category": "other"
     },
     {
-      "title": "Come and Take It Productions The Decibel Magazine Tour 2026",
-      "date": "May 9",
-      "time": "",
+      "title": "Emotional Intelligence 1-Day Workshop | Austin, TX",
+      "date": "May 14",
+      "time": "9:00 AM",
       "location": "Austin, TX",
       "description": "",
-      "url": "https://www.do512.com/events/2026/5/9/the-decibel-magazine-tour-2026-tickets",
-      "source": "do512.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "Come and Take It Productions Cold / Alien Ant Farm",
-      "date": "May 10",
-      "time": "",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.do512.com/events/2026/5/10/cold-alien-ant-farm-tickets",
-      "source": "do512.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "May 4 @ 6:00pmAustin Startup Meetup",
-      "date": "May 4",
-      "time": "6:00pm",
-      "location": "Capital Factory, Austin TX",
-      "description": "",
-      "url": "https://capitalfactory.com/event/austin-startup-meetup-3/",
-      "source": "capitalfactory.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "May 4 @ 7:00pmATXR \u2013 Austin\u2019s AR/VR Meetup",
-      "date": "May 4",
-      "time": "7:00pm",
-      "location": "Capital Factory, Austin TX",
-      "description": "",
-      "url": "https://capitalfactory.com/event/atxr-austins-ar-vr-meetup-4/",
-      "source": "capitalfactory.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "May 5 @ 5:00pmFacilitation Lab Austin Meetup",
-      "date": "May 5",
-      "time": "5:00pm",
-      "location": "Capital Factory, Austin TX",
-      "description": "",
-      "url": "https://capitalfactory.com/event/facilitation-lab-austin-meetup-3/",
-      "source": "capitalfactory.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "May 5 @ 6:00pmTech & Tequila Meetup",
-      "date": "May 5",
-      "time": "6:00pm",
-      "location": "Capital Factory, Austin TX",
-      "description": "",
-      "url": "https://capitalfactory.com/event/tech-tequila-meetup-3/",
-      "source": "capitalfactory.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "May 5 @ 6:30pmFounder-Led Sales Meetup",
-      "date": "May 5",
-      "time": "6:30pm",
-      "location": "Capital Factory, Austin TX",
-      "description": "",
-      "url": "https://capitalfactory.com/event/founder-led-sales-meetup-3/",
-      "source": "capitalfactory.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "May 5 @ 6:30pmOut in Tech Austin Meetup",
-      "date": "May 5",
-      "time": "6:30pm",
-      "location": "Capital Factory, Austin TX",
-      "description": "",
-      "url": "https://capitalfactory.com/event/out-in-tech-austin-meetup-2/",
-      "source": "capitalfactory.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "May 6 @ 6:00pmProsper XO Meetup",
-      "date": "May 6",
-      "time": "6:00pm",
-      "location": "Capital Factory, Austin TX",
-      "description": "",
-      "url": "https://capitalfactory.com/event/prosper-xo-meetup-3/",
-      "source": "capitalfactory.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "May 6 @ 6:30pmATX Golang Meetup",
-      "date": "May 6",
-      "time": "6:30pm",
-      "location": "Capital Factory, Austin TX",
-      "description": "",
-      "url": "https://capitalfactory.com/event/atx-golang-meetup-2/",
-      "source": "capitalfactory.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "May 7 @ 5:00pmSWAN Q1 2026 Pitch Event",
-      "date": "May 7",
-      "time": "5:00pm",
-      "location": "Capital Factory, Austin TX",
-      "description": "",
-      "url": "https://capitalfactory.com/event/swan-q1-2026-pitch-event/",
-      "source": "capitalfactory.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "May 7 @ 6:30pmFounders Situation Lab Meetup",
-      "date": "May 7",
-      "time": "6:30pm",
-      "location": "Capital Factory, Austin TX",
-      "description": "",
-      "url": "https://capitalfactory.com/event/founders-alignment-lab-meetup-2/",
-      "source": "capitalfactory.com",
-      "tags": [],
-      "category": "other"
-    },
-    {
-      "title": "Real Connections- A Systems Driven Networking Experience",
-      "date": "",
-      "time": "5:00 PM",
-      "location": "Austin, TX",
-      "description": "",
-      "url": "https://www.eventbrite.com/e/real-connections-a-systems-driven-networking-experience-tickets-1987360079496",
+      "url": "https://www.eventbrite.com/e/emotional-intelligence-1-day-workshop-austin-tx-tickets-1802747318759",
       "source": "eventbrite.com",
-      "tags": [],
+      "tags": [
+        "Workshop"
+      ],
       "category": "other"
     },
     {
-      "title": "Austin Women in Tech: Founders & Professionals Networking Night",
-      "date": "",
-      "time": "7:00 PM",
+      "title": "Come and Take It Productions ARCHSPIRE: Long Roads Big Loads Tour",
+      "date": "May 15",
+      "time": "",
       "location": "Austin, TX",
       "description": "",
-      "url": "https://www.eventbrite.com/e/austin-women-in-tech-founders-professionals-networking-night-tickets-1988407837368",
-      "source": "eventbrite.com",
-      "tags": [],
+      "url": "https://www.do512.com/events/2026/5/15/archspire-long-roads-big-loads-tour-tickets",
+      "source": "do512.com",
+      "tags": [
+        "Tech"
+      ],
       "category": "other"
     }
   ]

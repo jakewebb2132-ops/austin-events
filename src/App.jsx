@@ -51,8 +51,8 @@ export default function App() {
             events={data.aiEvents}
           />
           <EventsSection
-            title="Business & Community"
-            eyebrow="Networking & Awards"
+            title="Tech & Networking"
+            eyebrow="Startups · Community · Workshops"
             events={data.otherEvents}
           />
         </div>
