@@ -1,93 +1,166 @@
+"""
+parse_and_deploy.py — Orchestrator for the Austin events pipeline
+
+Flow:
+  1. Scrape all sources  → scrape_abr.fetch_all_sources()
+  2. Classify events     → keyword-based, no external API
+  3. Write data file     → austin-events-data.json + public/ copy
+  4. Deploy to Vercel    → npx vercel --prod
+
+Usage:
+  python3 parse_and_deploy.py              # full run, current week
+  python3 parse_and_deploy.py --no-deploy  # skip Vercel (testing)
+"""
+
 import os
 import sys
 import json
 import subprocess
-from datetime import datetime
-import google.generativeai as genai
-from dotenv import load_dotenv
+from datetime import datetime, timedelta
 
-load_dotenv(os.path.expanduser("~/GTM Agents/.env"))
-genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
+from scrape_abr import fetch_all_sources
 
-DATA_FILE = os.path.expanduser("~/Sites/austin-events/austin-events-data.json")
+DATA_FILE   = os.path.expanduser("~/Sites/austin-events/austin-events-data.json")
+PUBLIC_FILE = os.path.expanduser("~/Sites/austin-events/public/austin-events-data.json")
 
-def extract_events_with_gemini(html_content):
-    prompt = """
-    Extract all events from this HTML content.
-    Return a JSON object matching this exact schema:
-    {
-      "aiEvents": [
-        {"title": "", "date": "May X", "time": "", "location": "", "description": "", "url": "", "source": "", "category": "ai", "tags": []}
-      ],
-      "otherEvents": [
-        {"title": "", "date": "May X", "time": "", "location": "", "description": "", "url": "", "source": "", "category": "other", "tags": []}
-      ]
+
+# ─────────────────────────────────────────────
+# Keyword-based classification (no API needed)
+# ─────────────────────────────────────────────
+
+AI_KEYWORDS = {
+    "ai", "a.i.", "artificial intelligence", "machine learning", "ml ",
+    "llm", "large language", "gpt", "chatgpt", "openai", "anthropic", "claude",
+    "gemini", "llama", "mistral", "deep learning", "neural network",
+    "nlp", "natural language", "computer vision", "data science",
+    "generative", "genai", "rag ", "vector db", "embedding",
+    "robotics", "autonomous", "intelligent automation", "ai agent",
+    "langchain", "hugging face", "diffusion", "stable diffusion",
+    "prompt engineer", "fine-tun",
+}
+
+TECH_KEYWORDS = {
+    "tech", "technology", "software", "developer", "coding", "programming",
+    "python", "javascript", "typescript", "golang", "rust", "react", "node",
+    "startup", "saas", "founder", "entrepreneur", "venture", "investor",
+    "product", "ux", "design sprint", "hackathon", "demo day",
+    "cloud", "aws", "azure", "devops", "kubernetes", "blockchain",
+    "ar/vr", "arvr", "augmented reality", "virtual reality", "medtech",
+    "biotech", "fintech", "cybersecurity", "security", "open source",
+    "networking", "meetup", "meet up", "workshop", "bootcamp",
+    "conference", "summit", "symposium", "panel", "pitch",
+}
+
+def _matches(name: str, keywords: set) -> bool:
+    lower = name.lower()
+    return any(kw in lower for kw in keywords)
+
+def classify_events(raw_events: list) -> dict:
+    """
+    Split events into aiEvents and otherEvents using keyword matching.
+    Events matching neither bucket are discarded (pure entertainment, etc.).
+    """
+    ai_events    = []
+    other_events = []
+
+    for e in raw_events:
+        name = e.get("name", "")
+
+        # Normalise to the output schema
+        out = {
+            "title":       name,
+            "date":        e.get("date", ""),
+            "time":        e.get("time", ""),
+            "location":    e.get("location", ""),
+            "description": "",
+            "url":         e.get("url", ""),
+            "source":      e.get("source", ""),
+            "tags":        [],
+        }
+
+        if _matches(name, AI_KEYWORDS):
+            out["category"] = "ai"
+            ai_events.append(out)
+        elif _matches(name, TECH_KEYWORDS):
+            out["category"] = "other"
+            other_events.append(out)
+        # else: discard (music, bars, etc.)
+
+    print(f"[Classify] {len(ai_events)} AI events, {len(other_events)} other events "
+          f"(discarded {len(raw_events) - len(ai_events) - len(other_events)})")
+    return {"aiEvents": ai_events, "otherEvents": other_events}
+
+
+# ─────────────────────────────────────────────
+# Data file helpers
+# ─────────────────────────────────────────────
+
+def build_data(classified: dict, start_date: datetime, end_date: datetime, sources: list) -> dict:
+    week_label = f"{start_date.strftime('%B %-d')}–{end_date.strftime('%-d, %Y')}"
+    return {
+        "weekOf":      week_label,
+        "startDate":   start_date.strftime("%Y-%m-%d"),
+        "endDate":     end_date.strftime("%Y-%m-%d"),
+        "generatedAt": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "sources":     sources,
+        "aiEvents":    classified["aiEvents"],
+        "otherEvents": classified["otherEvents"],
     }
-    Ensure all events have a verified URL. Put AI events in aiEvents, and networking/business in otherEvents.
-    HTML Content:
-    """ + html_content
 
-    model = genai.GenerativeModel('gemini-1.5-flash')
-    response = model.generate_content(prompt)
-    try:
-        # Strip markdown formatting if present
-        text = response.text.strip()
-        if text.startswith('```json'): text = text[7:]
-        if text.endswith('```'): text = text[:-3]
-        return json.loads(text)
-    except Exception as e:
-        print(f"Error parsing Gemini response: {e}")
-        return {"aiEvents": [], "otherEvents": []}
-
-def update_data_file(new_events):
-    if not os.path.exists(DATA_FILE):
-        return False
-        
-    with open(DATA_FILE, 'r') as f:
-        data = json.load(f)
-        
-    # Append new events
-    data['aiEvents'].extend(new_events.get('aiEvents', []))
-    data['otherEvents'].extend(new_events.get('otherEvents', []))
-    data['generatedAt'] = datetime.now().isoformat()
-    
-    with open(DATA_FILE, 'w') as f:
+def write_data(data: dict):
+    with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=2)
-        
-    # Also copy to public/
-    public_file = os.path.expanduser("~/Sites/austin-events/public/austin-events-data.json")
-    if os.path.exists(os.path.dirname(public_file)):
-        with open(public_file, 'w') as f:
+    print(f"[Data] Wrote {DATA_FILE}")
+
+    pub_dir = os.path.dirname(PUBLIC_FILE)
+    if os.path.isdir(pub_dir):
+        with open(PUBLIC_FILE, "w") as f:
             json.dump(data, f, indent=2)
-            
-    return len(new_events.get('aiEvents', [])) + len(new_events.get('otherEvents', []))
+        print(f"[Data] Wrote {PUBLIC_FILE}")
 
-def deploy_to_vercel():
-    print("Deploying to Vercel...")
-    subprocess.run(["npx", "vercel", "--prod", "--yes"], cwd=os.path.expanduser("~/Sites/austin-events/"), check=True)
-    
-def run_from_web():
-    from scrape_abr import fetch_latest_newsletter
-    print("Running fallback web scraper...")
-    html = fetch_latest_newsletter()
-    if html:
-        process_html(html)
+
+# ─────────────────────────────────────────────
+# Deploy
+# ─────────────────────────────────────────────
+
+def deploy():
+    print("[Vercel] Deploying to production...")
+    subprocess.run(
+        ["npx", "vercel", "--prod", "--yes"],
+        cwd=os.path.expanduser("~/Sites/austin-events/"),
+        check=True,
+    )
+    print("[Vercel] Done.")
+
+
+# ─────────────────────────────────────────────
+# Main
+# ─────────────────────────────────────────────
+
+def main():
+    no_deploy = "--no-deploy" in sys.argv
+
+    start_date = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    end_date   = start_date + timedelta(days=7)
+
+    raw_events = fetch_all_sources(start_date, end_date)
+    if not raw_events:
+        print("[Main] No events found. Aborting.")
+        sys.exit(1)
+
+    classified = classify_events(raw_events)
+    source_names = sorted({e.get("source", "") for e in raw_events if e.get("source")})
+    data = build_data(classified, start_date, end_date, source_names)
+    write_data(data)
+
+    total = len(data["aiEvents"]) + len(data["otherEvents"])
+    print(f"\n✓ {len(data['aiEvents'])} AI  +  {len(data['otherEvents'])} other  =  {total} total events")
+
+    if no_deploy:
+        print("[Deploy] Skipped (--no-deploy)")
     else:
-        print("No content found on web.")
+        deploy()
 
-def process_html(html_content):
-    print("Extracting events...")
-    new_events = extract_events_with_gemini(html_content)
-    count = update_data_file(new_events)
-    print(f"Added {count} new events.")
-    deploy_to_vercel()
-    
+
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        # If file is provided
-        file_path = sys.argv[1]
-        with open(file_path, 'r') as f:
-            process_html(f.read())
-    else:
-        # Fallback to web
-        run_from_web()
+    main()
