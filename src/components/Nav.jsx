@@ -4,7 +4,6 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a
           href="https://jwaiconsulting.com"
-          target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-3 group"
         >
@@ -33,7 +32,6 @@ export default function Nav() {
 
         <a
           href="https://jwaiconsulting.com/#contact"
-          target="_blank"
           rel="noopener noreferrer"
           className="btn-outline"
         >
